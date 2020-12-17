@@ -1,0 +1,96 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*PrimaryColor*/
+$DarkCyan: hsl(185, 75%, 39%);
+$VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+$DarkGrayishBlue: hsl(227, 10%, 46%);
+
+/*NeutralColor*/
+$DarkGray: hsl(0, 0%, 59%);
+
+body {
+    width: 375px;
+    height: 665px;
+    background: url("images/bg-pattern-top.svg") no-repeat fixed -800px -500px, url("images/bg-pattern-bottom.svg") no-repeat fixed  150px 250px, $DarkCyan; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kumbh Sans';
+    font-size: 400;
+}
+
+@media screen and (min-width: 376px) {
+    body {
+        height: 100%;
+        width: 100%;
+        background: url("images/bg-pattern-top.svg") no-repeat fixed -280px -500px, url("images/bg-pattern-bottom.svg") no-repeat fixed  670px 400px, $DarkCyan;  
+    }
+}
+
+.card {
+    width: 325px;
+    height: 375px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    .bg {
+        border-radius: 15px 15px 0 0;
+        width: 325px;
+    }
+    .id {
+        border-radius: 55px;
+        margin-top: -50px;
+        border: solid 5px white ;
+        height: 100px;
+        width: 100px;
+    }
+    h1 {
+        font-size: 1em;
+        color: $DarkGrayishBlue;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 1.5em;
+    }
+        em { 
+            color: $VeryDarkDesaturatedBlue;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 1em;
+            margin-bottom: 2em;
+        }
+        p {
+            font-size: 0.8em;
+            color: $DarkGrayishBlue;
+            margin-top: 0.5em;
+        }
+    .bottom {
+        margin-top: 15px;
+        padding-top: 4vh;
+        border-top: solid 1px $DarkGray;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 376px) {
+   .card {
+       margin-top: 25vh;
+   }
+}
+
+/*footer*/
+.attribution { 
+    margin-top: 3em;
+    font-size: 11px; text-align: center; 
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}

@@ -1,0 +1,119 @@
+/*font*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/*PrimaryColor*/
+/*NeutralColor*/
+body {
+  width: 375px;
+  height: 665px;
+  background: url("images/bg-pattern-top.svg") no-repeat fixed -800px -500px, url("images/bg-pattern-bottom.svg") no-repeat fixed 150px 250px, #19a2ae;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Kumbh Sans';
+  font-size: 400;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    height: 100%;
+    width: 100%;
+    background: url("images/bg-pattern-top.svg") no-repeat fixed -280px -500px, url("images/bg-pattern-bottom.svg") no-repeat fixed 670px 400px, #19a2ae;
+  }
+}
+
+.card {
+  width: 325px;
+  height: 375px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+}
+
+.card .bg {
+  border-radius: 15px 15px 0 0;
+  width: 325px;
+}
+
+.card .id {
+  border-radius: 55px;
+  margin-top: -50px;
+  border: solid 5px white;
+  height: 100px;
+  width: 100px;
+}
+
+.card h1 {
+  font-size: 1em;
+  color: #6a6f81;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 1.5em;
+}
+
+.card em {
+  color: #2d3248;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.card p {
+  font-size: 0.8em;
+  color: #6a6f81;
+  margin-top: 0.5em;
+}
+
+.card .bottom {
+  margin-top: 15px;
+  padding-top: 4vh;
+  border-top: solid 1px #969696;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 376px) {
+  .card {
+    margin-top: 25vh;
+  }
+}
+
+/*footer*/
+.attribution {
+  margin-top: 3em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
